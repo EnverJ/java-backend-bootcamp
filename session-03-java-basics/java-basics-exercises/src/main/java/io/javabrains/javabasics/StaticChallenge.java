@@ -11,8 +11,19 @@ Create a class `Rectangle` with the following attributes: `width`, `height`, and
  */
 
 public class StaticChallenge {
+    int width, height;
+    static int numOfRectangles;
+
+    public StaticChallenge(int width, int height) {
+        this.width = width;
+        this.height = height;
+    }
+    public int getAre() {
+        return width * height;
+    }
 
     public static void main(String[] args) {
-
+  StaticChallenge sc = new StaticChallenge(45,8);
+        System.out.println(sc.getAre());
     }
 }
